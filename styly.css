@@ -32,26 +32,21 @@ body {
   text-align: center;
 }
 
-.card h1 {
+.card__title {
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-size: 2.5rem;
   margin: 20px;
 }
 
-.card p {
+.card__body {
     padding: 0 7px 20px;
-}
-
-/* button section */
-.button-menu {
-    background-color: #283e50;
 }
 
 .buttons {
     display: flex;
     flex-direction: column;
-    gap: 1px;
+    background-color: #283e50;
   }
 
 a {
@@ -66,18 +61,19 @@ a {
     line-height: 50px;
 }
 
-.button__green {
+.button--rules {
     background-color: #1fcca4;
+    border-bottom: 1px solid #283e50;
 }
 
-.button__green:hover {
+.button--rules:hover {
     background-color: #1cbb96;
 }
 
-.button__blue {
+.button--start-game{
     background-color: #0197f6;
 }
 
-.button__blue:hover {
+.button--start-game:hover {
     background-color: #0090e9;
 }
