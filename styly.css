@@ -37,10 +37,12 @@ body {
   font-weight: 400;
   font-size: 2.5rem;
   margin: 20px;
+  text-align: center;
 }
 
 .card__body {
     padding: 0 7px 20px;
+    line-height: 1.5;
 }
 
 .buttons {
@@ -76,4 +78,80 @@ a {
 
 .button--start-game:hover {
     background-color: #0090e9;
+}
+
+/* game field styles */
+
+.game {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-card {
+  max-width: 80vmin;
+}
+
+.card__status-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card__status-menu__status {
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+.reload-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80px;
+}
+
+.reload-button {
+  padding: 5px;
+  border-radius: 7px;
+  margin: 5px;
+}
+
+.reload-button--home {
+  background-color: #1fcca4;
+}
+
+.reload-button--restart {
+  background-color: #0197f6;
+}
+
+.reload-button--home:hover {
+  background-color: #1cbb96;
+}
+
+.reload-button--restart-game:hover {
+  background-color: #0090e9;
+}
+
+.playing-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.one-column {
+  display: flex;
+  flex-wrap: nowrap
+}
+
+.one-box {
+  height: 6vw;
+  width: 6vw;
+  border: 1px solid black;
+  opacity: 0.5;
+}
+
+.one-box:hover,
+.one-box:focus {
+  opacity: 0.7;
 }
