@@ -1,7 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: linear-gradient(#615dad, #ffc8da);
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
   margin: 0;
+  text-align: center;
   font-family: sans-serif;
   -webkit-font-smoothing: antialiased;
 }
@@ -32,11 +39,11 @@ body {
   text-align: center;
 }
 
-.card__title {
+.game__title {
   font-family: "Lobster", sans-serif;
   font-weight: 400;
   font-size: 2.5rem;
-  margin: 20px;
+  margin: 20px 0 0;
   text-align: center;
 }
 
@@ -49,6 +56,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #283e50;
+    gap: 1px;
   }
 
 a {
@@ -63,95 +71,79 @@ a {
     line-height: 50px;
 }
 
-.button--rules {
+.button--rules,
+.game__link--home {
     background-color: #1fcca4;
-    border-bottom: 1px solid #283e50;
 }
 
-.button--rules:hover {
+.button--rules:hover,
+.game__link--home:hover {
     background-color: #1cbb96;
 }
 
-.button--start-game{
+.button--start-game,
+.game__link--restart {
     background-color: #0197f6;
 }
 
-.button--start-game:hover {
+.button--start-game:hover,
+.game__link--restart:hover {
     background-color: #0090e9;
 }
 
 /* game field styles */
 
 .game {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.game-card {
   max-width: 80vmin;
+  margin: 1rem auto 2rem auto;
 }
 
-.card__status-menu {
+.game__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.card__status-menu__status {
-  text-transform: uppercase;
   padding: 5px 0;
 }
 
-.reload-buttons {
+.game__nav--left {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 5px 0;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 80px;
+  gap: 0.5rem;
 }
 
-.reload-button {
-  padding: 5px;
+.game__symbol {
+  height: 1rem;
+}
+
+.game__nav--right {
+  display: flex;
+  align-items: center;
+}
+
+.game__link {
+  padding: 5px 7px;
   border-radius: 7px;
   margin: 5px;
+  cursor: pointer;
 }
 
-.reload-button--home {
-  background-color: #1fcca4;
-}
-
-.reload-button--restart {
-  background-color: #0197f6;
-}
-
-.reload-button--home:hover {
-  background-color: #1cbb96;
-}
-
-.reload-button--restart-game:hover {
-  background-color: #0090e9;
-}
-
-.playing-field {
+.game__field {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-.one-column {
-  display: flex;
-  flex-wrap: nowrap
-}
-
-.one-box {
-  height: 6vw;
-  width: 6vw;
+.game__box {
+  width: 10%;
+  aspect-ratio: 1 / 1;
   border: 1px solid black;
   opacity: 0.5;
 }
 
-.one-box:hover,
-.one-box:focus {
+.game__box:hover,
+.game__box:focus {
   opacity: 0.7;
 }
