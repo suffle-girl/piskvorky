@@ -148,6 +148,13 @@ a {
   opacity: 0.5;
 }
 
+.game__box:disabled {
+  background-color: white;
+  color: black;
+  border-color: black;
+  opacity: 0.7;
+}
+
 .game__box:hover,
 .game__box:focus {
   opacity: 0.7;
