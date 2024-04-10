@@ -161,14 +161,29 @@ a {
   cursor: pointer;
 }
 
+@keyframes slidein {
+  from {
+    background-size: 0%;
+  }
+
+  to {
+    background-size: 80%;
+  }
+}
 .game__field--circle {
   background-image: url("./black-circle.svg");
   background-repeat: no-repeat;
   background-position: 50%;
+  background-size: 80%;
+  animation-duration: 0.4s;
+  animation-name: slidein;
 }
 
 .game__field--cross {
   background-image: url("./black-cross.svg");
   background-repeat: no-repeat;
   background-position: 50%;
+  background-size: 80%;
+  animation-duration: 0.4s;
+  animation-name: slidein;
 }

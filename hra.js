@@ -15,36 +15,27 @@ const clicking = (event) => {
     playerSymbol.setAttribute("src", "circle.svg");
     playerSymbol.setAttribute("alt", "kolečko");
   }
-  event.target.disabled = true;
+
+  return event.target.disabled = true;
 };
 
-document
-  .querySelector("button:nth-child(1)")
-  .addEventListener("click", clicking);
-document
-  .querySelector("button:nth-child(2)")
-  .addEventListener("click", clicking);
-document
-  .querySelector("button:nth-child(3)")
-  .addEventListener("click", clicking);
-document
-  .querySelector("button:nth-child(4)")
-  .addEventListener("click", clicking);
-document
-  .querySelector("button:nth-child(5)")
-  .addEventListener("click", clicking);
-document
-  .querySelector("button:nth-child(6)")
-  .addEventListener("click", clicking);
-document
-  .querySelector("button:nth-child(7)")
-  .addEventListener("click", clicking);
-document
-  .querySelector("button:nth-child(8)")
-  .addEventListener("click", clicking);
-document
-  .querySelector("button:nth-child(9)")
-  .addEventListener("click", clicking);
-document
-  .querySelector("button:nth-child(10)")
-  .addEventListener("click", clicking);
+const leaveConfirm = (event) => {
+    const confirmation = confirm("Opravdu chceš začít znovu?");
+    if (confirmation !== true) {
+        event.preventDefault();
+    }
+};
+
+document.querySelector("button:nth-child(1)").addEventListener("click", clicking);
+document.querySelector("button:nth-child(2)").addEventListener("click", clicking);
+document.querySelector("button:nth-child(3)").addEventListener("click", clicking);
+document.querySelector("button:nth-child(4)").addEventListener("click", clicking);
+document.querySelector("button:nth-child(5)").addEventListener("click", clicking);
+document.querySelector("button:nth-child(6)").addEventListener("click", clicking);
+document.querySelector("button:nth-child(7)").addEventListener("click", clicking);
+document.querySelector("button:nth-child(8)").addEventListener("click", clicking);
+document.querySelector("button:nth-child(9)").addEventListener("click", clicking);
+document.querySelector("button:nth-child(10)").addEventListener("click", clicking);
+
+
+document.querySelector(".game__link--restart").addEventListener("click", leaveConfirm);
