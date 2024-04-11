@@ -3,6 +3,7 @@ let currentPlayer = "circle";
 const clicking = (event) => {
   const btn = event.target;
   const playerSymbol = document.querySelector("#currentlyPlayingSymbol");
+  event.target.disabled = true;
   if (currentPlayer === "circle") {
     btn.classList.add("game__field--circle");
     currentPlayer = "cross";
@@ -15,8 +16,6 @@ const clicking = (event) => {
     playerSymbol.setAttribute("src", "circle.svg");
     playerSymbol.setAttribute("alt", "kolečko");
   }
-
-  return event.target.disabled = true;
 };
 
 const leaveConfirm = (event) => {
