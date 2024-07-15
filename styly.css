@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-image: linear-gradient(#615dad, #ffc8da);
+  background-image: linear-gradient(#1fcca4, #0197f691);
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
@@ -32,10 +32,10 @@ body {
 
 /* image section */
 .image {
-    max-width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
+  max-width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
 /* content section */
 .content {
@@ -52,47 +52,47 @@ body {
 }
 
 .card__body {
-    padding: 0 7px 20px;
-    line-height: 1.5;
+  padding: 0 20px 20px;
+  line-height: 1.5;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    background-color: #283e50;
-    gap: 1px;
-  }
+  display: flex;
+  flex-direction: column;
+  background-color: #283e50;
+  gap: 1px;
+}
 
 a {
-    color: #ffffff;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .button {
-    display: block;
-    height: 50px;
-    text-align: center;
-    line-height: 50px;
+  display: block;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
 }
 
 .button--rules,
 .game__link--home {
-    background-color: #1fcca4;
+  background-color: #1fcca4;
 }
 
 .button--rules:hover,
 .game__link--home:hover {
-    background-color: #1cbb96;
+  background-color: #1cbb96;
 }
 
 .button--start-game,
 .game__link--restart {
-    background-color: #0197f6;
+  background-color: #0197f6;
 }
 
 .button--start-game:hover,
 .game__link--restart:hover {
-    background-color: #0090e9;
+  background-color: #0090e9;
 }
 
 /* game field styles */
