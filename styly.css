@@ -77,12 +77,12 @@ a {
 
 .button--rules,
 .game__link--home {
-  background-color: #1fcca4;
+  background-color: #1cbb96;
 }
 
 .button--rules:hover,
 .game__link--home:hover {
-  background-color: #1cbb96;
+  background-color: #159174;
 }
 
 .button--start-game,
